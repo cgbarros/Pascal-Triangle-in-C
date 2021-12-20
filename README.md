@@ -18,10 +18,10 @@ To compare both functions, I added a cpu time counter.
 - call the function followed by `n` and `k`, e.g.
 
 ```
-`./a.out`
-`function: bc_dp 250 100`
-`result: 1103510280765129870`
-`cpu time: 0.000654`
+./a.out
+function: bc_dp 250 100
+result: 1103510280765129870
+cpu time: 0.000654
 ```
 
 - compare to:
