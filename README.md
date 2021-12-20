@@ -13,26 +13,22 @@ Or, defining Pascal's triangle recursively:
 - The second and second-to-last numbers are equal to the row's index (e. g. `[4, 1]` and `[4, 3]` should return `4`), so if `k = 1` or `k = n - k`, the function returns `n` immediately.
 - Lastly, and more importantly, Pascal's triangle is symmetric. So we only have to calculate half of it. This is done in the auxiliary function `aux_bc_better`.
 
-to compare both functions, I added a cpu time counter.
+To compare both functions, I added a cpu time counter.
 - Run the program
 - call the function followed by `n` and `k`, e.g.
 
-> `./a.out`
-> 
-> `function: bc_dp 250 100`
-> 
-> `result: 1103510280765129870`
-> 
-> `cpu time: 0.000654`
+```
+`./a.out`
+`function: bc_dp 250 100`
+`result: 1103510280765129870`
+`cpu time: 0.000654`
+```
 
-compare to:
+- compare to:
 
 ```
-> ./a.out 
-> 
-> function: bc_better 250 100
-> 
-> result: 1103510280765129870
-> 
-> cpu time: 0.000130
+./a.out 
+function: bc_better 250 100
+result: 1103510280765129870
+cpu time: 0.000130
 ```
